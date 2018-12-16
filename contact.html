@@ -1,0 +1,112 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel='stylesheet' href='style.css'>
+        <title>Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+                <a class="navbar-brand ml-4" href="#">Daniel Barkley</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mr-4" id="navbarResponsive">
+                  <ul class="navbar-nav ml-auto">
+                    <li class='nav-item active'>
+                        <a class='nav-link' href='index.html'>About Me</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a class='nav-link' href='portfolio.html'>Portfolio</a>
+                    </li>
+                    <li class='nav-item'>
+                        <a class='nav-link' href='contact.html'>Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        <div class ="containter-fluid border pt-2"> 
+            <form id="contact-form" method="post" action="contact.php" role="form">
+              <div class="messages"></div>             
+                <div class="controls">                
+                  <div class="row">
+                    <div class="col-md-3"></div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="form_name">Firstname *</label>
+                            <input id="form_name" type="text" name="name" class="form-control" 
+                             placeholder="Please enter your firstname *" required="required" 
+                             data-error="Firstname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <label for="form_lastname">Lastname *</label>
+                            <input id="form_lastname" type="text" name="surname" class="form-control" 
+                             placeholder="Please enter your lastname *" required="required" 
+                             data-error="Lastname is required.">
+                            <div class="help-block with-errors"></div>
+                          </div>
+                        </div>
+                  </div>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                            <label for="form_email">Email *</label>
+                            <input id="form_email" type="email" name="email" class="form-control" 
+                                placeholder="Please enter your email *" required="required" 
+                                data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="row">
+                        <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_message">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control" 
+                                placeholder="Message for me *" rows="4" required="required" 
+                                data-error="Please, leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            </div>
+                        </div>
+                    <div class="row margin">
+                      <div class="col-md-3"></div>
+                        <div class="col-md-3">
+                        <input type="submit" class="btn btn-success btn-send" value="Send message">
+                        </div>
+                    </div>
+                </div>          
+            </form>
+        </div>       
+    <div class="containter-fluid bg-dark">
+            <div class="row text-center text-white">
+                <div class="col">
+                    <hr class="light">
+                    <h3>Contact</h3>
+                    <hr class="light">
+                    <p>888-888-888</p>
+                    <p>email@blankemail.com</p>
+                    <p>100 street name</p>
+                    <p>city,state 000000</p>
+                </div>
+                <div class="col text-center text-white">
+                    <hr class="lght">
+                    <h3>Hours</h3>
+                    <hr class="light">
+                    <p>Blank Hours</p>
+                    <p>Blank Hours</p>
+                    <p>Blank Hours</p>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
